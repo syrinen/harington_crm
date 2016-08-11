@@ -1,0 +1,45 @@
+﻿@model DAL.Domain.Profile
+
+@{
+    ViewBag.Title = "My Profile";
+}
+
+<br />
+<div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#pinfo" aria-controls="pinfo" role="tab" data-toggle="tab">Personal Informations</a></li>
+        <li role="presentation"><a href="#experience" aria-controls="experience" role="tab" data-toggle="tab">Experience</a></li>
+        <li role="presentation"><a href="#education" aria-controls="education" role="tab" data-toggle="tab">Education</a></li>
+        <li role="presentation"><a href="#skills" aria-controls="skills" role="tab" data-toggle="tab">Skills</a></li>
+        <li role="presentation"><a href="#tools" aria-controls="tools" role="tab" data-toggle="tab">Tools</a></li>
+        <li role="presentation"><a href="#certAndTrain" aria-controls="certAndTrain" role="tab" data-toggle="tab">Certifications and Trainings</a></li>
+        <li role="presentation"><a href="#languages" aria-controls="languages" role="tab" data-toggle="tab">Languages</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="pinfo">
+            @Html.Partial("_PersonalInfoView", Model)
+        </div>
+        <div role="tabpanel" class="tab-pane" id="experience">
+            @Html.Partial("_ExperienceListView", Model.Experiences)
+        </div>
+        <div role="tabpanel" class="tab-pane" id="education">
+            @Html.Partial("_EducationListView", Model.Educations)
+        </div>
+        <div role="tabpanel" class="tab-pane" id="skills">
+            @Html.Partial("_SkillListView", Model.Skills)
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tools">
+            @Html.Partial("_ToolListView", Model.Tools)
+        </div>
+        <div role="tabpanel" class="tab-pane" id="certAndTrain">
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="languages">
+
+        </div>
+    </div>
+
+</div>

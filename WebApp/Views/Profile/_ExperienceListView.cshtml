@@ -1,0 +1,78 @@
+﻿@model IEnumerable<WebApp.Models.Experience>
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Company)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Start)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.End)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Company)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Start)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.End)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |           
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+</table>
+
+<p>    
+    <button class="btn btn-default" onclick="openPopup()">Add</button>
+</p>
+
+<div id="experience-dialog" style="display:none;">
+    @Html.Partial("_ExperienceForm", new WebApp.Models.Experience(null))
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+    $("#experience-dialog").dialog({
+        autoOpen: false,
+        title: 'Experience',
+        width: 600,
+        height: 'auto',
+        resizable: false,
+        closeOnEscape: true,
+        draggable: false,
+        closeText: "X",
+        modal: true
+    });
+});
+
+function openPopup() {
+    $("#experience-dialog").dialog("open");
+}
+
+</script>
+
+

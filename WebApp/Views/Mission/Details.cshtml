@@ -1,0 +1,44 @@
+﻿@model DAL.Domain.JobOffer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.Title)</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-8">
+            <h5><small>@Html.DisplayFor(model => model.Company)</small></h5>
+            <adress>
+                @Html.DisplayFor(model => model.CreationDate)<br />
+                <em>@Html.DisplayFor(model => model.Location)</em>
+            </adress>
+        </div>
+        <div class="col-md-4">
+            <dl class="dl-horizontal">
+                <dt>Experience</dt>
+                <dd>@Html.DisplayFor(model => model.Experience)</dd>
+                <dt>Contract</dt>
+                <dd>@Html.DisplayFor(model => model.EmploymentType)</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="row">
+        @Html.Raw(Model.Description)
+    </div>
+    <div class="row">
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
+</div>
+
+@section Styles {
+    <style type="text/css">
+
+    </style>
+}

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<DAL.Domain.JobOffer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@{
+    var enumerator = Model.GetEnumerator();
+    DAL.Domain.JobOffer item = null;
+}
+
+@while(enumerator.MoveNext())
+{    
+    <div class="row">
+        <div class="col-md-6">
+            @Html.Partial("_JobOfferItemView", enumerator.Current)
+        </div>
+        <div class="col-md-6">
+            @if(enumerator.MoveNext())
+            {
+                @Html.Partial("_JobOfferItemView", enumerator.Current)
+            }
+            else
+            {
+                break;
+            }
+        </div>
+    </div>
+}

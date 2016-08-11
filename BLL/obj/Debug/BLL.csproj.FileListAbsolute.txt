@@ -1,0 +1,9 @@
+D:\Projects\SSIIManager\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Projects\SSIIManager\BLL\bin\Debug\BLL.dll
+D:\Projects\SSIIManager\BLL\bin\Debug\BLL.pdb
+D:\Projects\SSIIManager\BLL\bin\Debug\DAL.dll
+D:\Projects\SSIIManager\BLL\bin\Debug\EntityFramework.dll
+D:\Projects\SSIIManager\BLL\bin\Debug\DAL.pdb
+D:\Projects\SSIIManager\BLL\bin\Debug\EntityFramework.xml
+D:\Projects\SSIIManager\BLL\obj\Debug\BLL.dll
+D:\Projects\SSIIManager\BLL\obj\Debug\BLL.pdb

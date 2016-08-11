@@ -1,0 +1,13 @@
+D:\Projects\SSIIManager\DAL\bin\Debug\DAL.dll.config
+D:\Projects\SSIIManager\DAL\bin\Debug\DAL.dll
+D:\Projects\SSIIManager\DAL\bin\Debug\DAL.pdb
+D:\Projects\SSIIManager\DAL\bin\Debug\EntityFramework.dll
+D:\Projects\SSIIManager\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\SSIIManager\DAL\bin\Debug\EntityFramework.xml
+D:\Projects\SSIIManager\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\SSIIManager\DAL\obj\Debug\DAL.dll
+D:\Projects\SSIIManager\DAL\obj\Debug\DAL.pdb
+D:\Projects\SSIIManager\DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\SSIIManager\DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\SSIIManager\DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\SSIIManager\DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

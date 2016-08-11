@@ -1,0 +1,37 @@
+﻿@model DAL.Domain.Mission
+
+
+<div class="card">
+    <div class="card-content">
+        <div class="row">
+            <div class="col-sm-12">
+                <h5>
+                    @Html.DisplayFor(model => model.Title)<br />
+                    @if (Model.Company != null)
+                    {
+                        <small>@Html.DisplayFor(model => model.Company)</small>
+                    }
+                </h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <dl class="dl-horizontal">
+                    <dt>Published&nbsp;<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></dt>
+                    <dd>@Html.DisplayFor(model => model.CreationDate)</dd>
+                    <dt>Location&nbsp;<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></dt>
+                    <dd>@Html.DisplayFor(model => model.Location)</dd>
+                    <dt>Experience</dt>
+                    <dd>@Html.DisplayFor(model => model.Experience)</dd>
+                    <dt>Contract</dt>
+                    <dd>@Html.DisplayFor(model => model.EmploymentType)</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="card-action">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID })&nbsp;&nbsp;
+        @Html.ActionLink("Details", "Details", new { id = Model.ID })&nbsp;&nbsp;
+        @Html.ActionLink("Delete", "Delete", new { id = Model.ID })&nbsp;&nbsp;
+    </div>
+</div>
